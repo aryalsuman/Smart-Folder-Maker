@@ -47,4 +47,4 @@ for files in all_files:
         print (f'%s Completed  {files} %s' % (fg(2), attr(0)))
     except:
         print(f" %sCannot Move {files}%s"% (fg(1), attr(0)))
-input("%sMoving Completed.%s\nPress Enter to continue..."% (fg(2), attr(0)))
+input("%sMoving Completed.\nPress Enter to continue...%s"% (fg(2), attr(0)))
