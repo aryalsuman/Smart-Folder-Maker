@@ -1,5 +1,13 @@
 import os,time
 import shutil #For copy ,move,renmae
+try:
+    np = __import__('colored', globals(), locals(), ['fg', 'bg','attr'], 0)
+  
+    fg = np.fg
+    bg = np.bg
+    attr=np.attr
+except:
+    os.system("pip install "+ "colored")
 from colored import fg, bg, attr
 
 all_files=os.listdir()
